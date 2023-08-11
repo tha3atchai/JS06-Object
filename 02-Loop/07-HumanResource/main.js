@@ -7,3 +7,19 @@ const employees = {
     mike: { salary: 800, address: { district: 'Pakkret', province: 'Nonthaburi' } },
     sarah: { salary: 2200, address: { district: 'Sriraja', province: 'Chonburi' } }
 };
+
+
+const humanResource = (name) => {
+    let isFind = false;
+    for(let key in employees){
+        if(key === name){
+            console.log(employees[key]);
+            isFind = true;
+            break;
+        }
+    }
+    if(!isFind) console.log("Not Found");
+};
+
+humanResource("sarah");
+
