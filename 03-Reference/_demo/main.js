@@ -32,3 +32,4 @@ log(employee.name);
 
 employee.age = 50;
 log(user.age);
+
